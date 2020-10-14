@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../styles.css';
 
 const Button = ({ onUpdateButton }) => {
@@ -7,6 +8,10 @@ const Button = ({ onUpdateButton }) => {
       Load more
     </button>
   );
+};
+
+Button.propTypes = {
+  onUpdateButton: PropTypes.func.isRequired,
 };
 
 export default Button;
